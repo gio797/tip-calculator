@@ -111,6 +111,12 @@ body {
   padding: 15px 50px;
   border-radius: 10px;
   width: 40%;
+  cursor: pointer;
+}
+
+.tip-Perc-btn:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
 }
 
 .reset-btn {
@@ -123,6 +129,11 @@ body {
   font-size: 1.4rem;
   color: hsl(183, 100%, 15%);
   border-radius: 10px;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background-color: hsl(185, 41%, 84%);
 }
 
 .custom-inp {
