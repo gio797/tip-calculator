@@ -3,16 +3,17 @@
 }
 
 body {
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   background-color: hsl(185, 41%, 84%);
   font-family: "Space Mono", monospace;
   font-weight: 700;
   color: hsl(186, 14%, 43%);
-  /* display: flex; */
+  display: flex;
+  /* align-content: center; */
   /* align-items: center; */
   /* justify-content: center; */
-  /* height: 100vh; */
 }
 
 .app {
@@ -23,6 +24,7 @@ body {
   justify-content: space-between;
   gap: 10px;
   border-radius: 20px;
+  flex: 1;
   /* height: 100vh; */
 }
 
@@ -30,6 +32,9 @@ body {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.6em;
+  margin: 0;
+  padding: 20px;
+  height: 116px;
 }
 
 .result-display {
@@ -121,7 +126,7 @@ body {
   font-weight: 700;
   font-size: 1.4rem;
   border: none;
-  padding: 15px 33px;
+  padding: 15px 28px;
   border-radius: 10px;
   width: 40%;
 }

@@ -10,14 +10,12 @@ function App() {
   const [peopleError, setPeopleError] = useState(false);
 
   const allRight = bill !== null && people !== null && tip !== null;
-  const tipAmount = allRight ? ((bill! * tip!) / people!).toFixed(2) : "0.00";
+  const tipAmount = allRight ? ((bill * tip) / people).toFixed(2) : "0.00";
   const totalPerPerson = allRight
-    ? ((bill! + bill! * tip!) / people!).toFixed(2)
+    ? ((bill + bill * tip) / people).toFixed(2)
     : "0.00";
-  const showTip =
-    !isNaN(parseFloat(tipAmount)) && isFinite(parseFloat(tipAmount));
-  const showTotal =
-    !isNaN(parseFloat(totalPerPerson)) && isFinite(parseFloat(totalPerPerson));
+  const showTip = !isNaN(parseFloat(tipAmount));
+  const showTotal = !isNaN(parseFloat(totalPerPerson));
 
   useEffect(() => {
     if (people === 0) {
@@ -30,6 +28,7 @@ function App() {
   function handleReset() {
     setBill(null);
     setPeople(null);
+    setTip(null);
   }
 
   return (
